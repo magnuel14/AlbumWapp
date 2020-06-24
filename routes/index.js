@@ -12,6 +12,7 @@ router.get('/', function (req, res, next) {
 
 });
 //inico de sesio y registro
+router.get('/verAlbum', visu.verAlbum);
 router.get('/verRegistro', visu.verRegistro);
 router.get('/verIncio', visu.verIncio);
 router.get('/verBuscar', visu.verBuscar);

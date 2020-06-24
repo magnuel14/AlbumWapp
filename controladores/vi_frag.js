@@ -2,6 +2,14 @@
 
 class vi_frag {
     //si no hay sesion activa redirecciona a registro si es el caso si no va ala principal
+    verAlbum(req, res) {
+        rres.render('index', {
+            title: 'Descrubre un mundo de pixeles',
+            fragmentos: 'Principal/album'
+
+        });
+
+    }
     verRegistro(req, res) {
         res.render('index', {
             title: 'Registra tu cuenta',
@@ -32,6 +40,6 @@ class vi_frag {
 
         });
     }
-   
+
 }
 module.exports = vi_frag;
