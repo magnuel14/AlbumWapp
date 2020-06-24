@@ -1,0 +1,145 @@
+<!-- imgenes-->
+<style>
+  /*galeria*/
+
+  .foto {
+    width: 460px;
+    height: 300px;
+  }
+
+  .galeria {
+    height: calc(300px + 3em);
+    width: 460px;
+    margin: 1em auto;
+    border: 1px solid #555;
+    position: relative;
+  }
+
+  .galeria img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+  }
+
+  .galeria input[type=radio] {
+    position: relative;
+    bottom: calc(-300px - 1.5em);
+    left: .5em;
+  }
+
+  .galeria input[type=radio]:nth-of-type(1):checked~img:nth-of-type(1) {
+    opacity: 1;
+  }
+
+  .galeria input[type=radio]:nth-of-type(2):checked~img:nth-of-type(2) {
+    opacity: 1;
+  }
+
+  .galeria input[type=radio]:nth-of-type(3):checked~img:nth-of-type(3) {
+    opacity: 1;
+  }
+
+  .galeria input[type=radio]:nth-of-type(4):checked~img:nth-of-type(4) {
+    opacity: 1;
+  }
+
+  .galeria input[type=radio]:nth-of-type(5):checked~img:nth-of-type(5) {
+    opacity: 1;
+  }
+
+  .galeria input[type=radio]:nth-of-type(6):checked~img:nth-of-type(6) {
+    opacity: 1;
+  }
+
+  .galeria input[type=radio]:nth-of-type(7):checked~img:nth-of-type(7) {
+    opacity: 1;
+  }
+
+  .galeria input[type=radio]:nth-of-type(8):checked~img:nth-of-type(8) {
+    opacity: 1;
+  }
+
+  .galeria input[type=radio]:nth-of-type(9):checked~img:nth-of-type(9) {
+    opacity: 1;
+  }
+
+  .galeria input[type=radio]:nth-of-type(10):checked~img:nth-of-type(10) {
+    opacity: 1;
+  }
+
+  .galeria input[type=radio]:nth-of-type(11):checked~img:nth-of-type(11) {
+    opacity: 1;
+  }
+
+  /* fin de albun*/
+</style>
+
+<div id="conte">
+
+  <div id="contenedor">
+    <div id="cabecera">
+      <h1>Tu propio album en linea</h1>
+
+    </div>
+
+    <div id="menu">
+      <button id="btn1"><img src="images/img/icons8-abrir-carpeta-50.png"></button>
+
+      <div id="fondomenu">
+        <ul>
+          <li><a href="/"><img class="alineadoTextoImagenCentro" src="images/img/home.png">&nbsp;Inicio</a></li>
+          <li><a href="/verBuscar"><img class="alineadoTextoImagenCentro" src="images/img/lupa.png">&nbsp;Buscar</a>
+          </li>
+          <li><a href="/verAgregar"><img class="alineadoTextoImagenCentro" src="images/img/agregar.png">&nbsp;Nueva
+              Foto</a>
+          </li>
+          <li><a href="/"><img class="alineadoTextoImagenCentro" src="images/img/estrella.svg">&nbsp;Favoritas</a>
+          </li>
+          <li><a href="/"><img class="alineadoTextoImagenCentro" src="images/img/logout.jpg">&nbsp;Logout</a>
+          </li>
+          <li><a href="/verIncio"><img class="alineadoTextoImagenCentro" src="images/img/login.jpg">&nbsp;Login</a></li>
+          <li><a href="/verRegistro"><img class="alineadoTextoImagenCentro"
+                src="images/img/register.jpg">&nbsp;Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="z-index: 1;">
+  <div class="titulo">
+    <small>Fondos de pantalla </small>
+  </div>
+  <div class="galeria">
+    <input type="radio" name="navegacion" id="_1" checked>
+    <input type="radio" name="navegacion" id="_2">
+    <input type="radio" name="navegacion" id="_3">
+    <input type="radio" name="navegacion" id="_4">
+    <input type="radio" name="navegacion" id="_5">
+    <input type="radio" name="navegacion" id="_6">
+    <input type="radio" name="navegacion" id="_7">
+    <input type="radio" name="navegacion" id="_8">
+    <input type="radio" name="navegacion" id="_9">
+    <input type="radio" name="navegacion" id="_10">
+    <input type="radio" name="navegacion" id="_11">
+
+    <img src="imagenes/1.jpg" class="foto" alt="Galeria CSS 1" />
+    <img src="imagenes/2.png" class="foto" alt="Galeria CSS 2" />
+    <img src="imagenes/3.jpg" class="foto" alt="Galeria CSS 3" />
+    <img src="imagenes/4.png" class="foto" alt="Galeria CSS 4" />
+    <img src="imagenes/5.jpg" class="foto" alt="Galeria CSS 5" />
+    <img src="imagenes/6.jpg" class="foto" alt="Galeria CSS 6" />
+    <img src="imagenes/7.jpg" class="foto" alt="Galeria CSS 7" />
+    <img src="imagenes/8.jpg" class="foto" alt="Galeria CSS 8" />
+    <img src="imagenes/9.jpg" class="foto" alt="Galeria CSS 9" />
+    <img src="imagenes/10.jpg" class="foto" alt="Galeria CSS 10" />
+    <img src="imagenes/11.png" class="foto" alt="Galeria CSS 11" />
+  </div>
+  <a class="boton_suce"><img class="alineadoTextoImagenCentro" src="images/img/like.png"></a>
+  <a class="boton_cn"><img class="alineadoTextoImagenCentro" src="images/img/dislike.png"></a>
+
+  <button class="boton_infor">Añadir a favoritos</button>
+
+</div>

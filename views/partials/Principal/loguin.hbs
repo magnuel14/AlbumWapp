@@ -1,0 +1,238 @@
+<style>
+    /*cuerpo*/
+
+    body {
+
+        background: url(../images/img/fo2.jpg);
+    }
+
+    .formulario {
+        border: 5px double darkslategray;
+        font: normal 20px arial, helvetica, sans-serif;
+        text-align: center;
+        color: black;
+        background-color: rgba(0, 100, 100, .30);
+        margin: 0 auto;
+        width: 400px;
+        height: 325px;
+        border-radius: 20px;
+        z-index: 1;
+
+
+    }
+
+
+    #menu {
+        background: url(../img/imagenes/boton-menu.jpg);
+    }
+
+    #fondomenu {
+        background: url(../img/imagenes/boton-menu3.jpg);
+
+    }
+
+
+    #fondomenu ul li a {
+        background: url(../images/img/imagenes/boton-menu3.jpg);
+
+    }
+
+    /* parte responsiva*/
+    @media (min-width: 1201px) {
+        #fondomenu img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #menu {
+            height: 30px;
+        }
+
+        #fondomenu {
+            width: 900px;
+            height: 30px;
+        }
+
+        #fondomenu ul {
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: auto;
+            margin-right: 0px;
+            margin-left: 536px;
+            padding: 0;
+        }
+
+        #fondomenu ul li a {
+            width: 120px;
+            height: 30px;
+            margin-right: 1px;
+            float: left;
+            line-height: 30px;
+            font-size: 13px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+
+
+
+
+    }
+
+    @media (min-width: 601px) and (max-width: 1200px) {
+
+        #fondomenu img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #menu {
+            height: 30px;
+        }
+
+        #fondomenu {
+            width: 600px;
+            height: 30px;
+        }
+
+        #fondomenu ul {
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: auto;
+            margin-right: 0px;
+            margin-left: 236px;
+            padding: 0;
+        }
+
+        #fondomenu ul li a {
+            width: 120px;
+            height: 30px;
+            margin-right: 1px;
+            float: left;
+            line-height: 30px;
+            font-size: 13px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        #fondomenu ul li a:hover {
+            color: blanchedalmond;
+        }
+
+
+    }
+
+    @media (max-width: 600px) {
+        #btn1 {
+            display: block;
+            border-radius: 50px;
+
+
+        }
+
+        #btn1 img {
+            width: 40px;
+            height: 40px;
+            text-align: left;
+        }
+
+        #btn2 {
+            display: none;
+
+        }
+
+        #fondomenu img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #menu {
+            height: 30px;
+        }
+
+        #fondomenu {
+            width: 90px;
+            height: 30px;
+        }
+
+        #fondomenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #fondomenu ul li a {
+            width: 90px;
+            height: 30px;
+            margin-left: 1px;
+            float: left;
+            line-height: 30px;
+            font-size: 9px;
+            color: white;
+            text-decoration: none;
+            display: block;
+            z-index: 3;
+
+
+        }
+
+
+
+    }
+</style>
+<div id="conte">
+
+    <div id="contenedor">
+        <div id="cabecera">
+            <h1>Bienvenido de nuevo</h1>
+
+        </div>
+
+        <div id="menu">
+            <button id="btn1"><img src="images/img/icons8-abrir-carpeta-50.png"></button>
+
+            <div id="fondomenu">
+                <ul>
+                    <li><a href="/"><img class="alineadoTextoImagenCentro" src="images/img/home.png">&nbsp;Inicio</a>
+                    </li>
+
+                    <li><a href="/verRegistro"><img class="alineadoTextoImagenCentro"
+                                src="images/img/register.jpg">&nbsp;Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="z-index: 1;">
+
+
+    <form class="formulario" method="POST" action="/">
+        <div class="titulo">
+            <small>DATOS DE LA CUENTA </small>
+        </div>
+        <div>
+            <label class="label_titulo" for="exampleInputEmail1">Correo electronico </label>
+            <br>
+            <input type="email" id="correo" name="correo" aria-describedby="emailHelp"
+                placeholder="Ingrese el correo electronico personal" required>
+        </div>
+        <br>
+        <div>
+            <label class="label_titulo" for="exampleInputPassword1">Clave </label>
+            <br>
+            <input required type="password" class="form-control" name="clave" id="exampleInputPassword1"
+                placeholder="Clave">
+        </div>
+        <br>
+
+        <button class="boton_suce" type="submit">Inicio sesion</button>
+        <br>
+        <br>
+        <a class="boton_infor" href="register.html">&nbsp;¿Aun no estas registrado?</a>
+
+        <br>
+    </form>
+</div>

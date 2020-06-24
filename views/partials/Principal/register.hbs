@@ -1,0 +1,288 @@
+<style>
+    body {
+        background: url(../images/img/fo1.jpg);
+    }
+
+    .formulario {
+        border: 5px double;
+        font: normal 20px arial, helvetica, sans-serif;
+        text-align: center;
+        color: black;
+        margin: 0 auto;
+        width: 400px;
+        background-color: rgba(0, 100, 100, .40);
+
+        height: 780px;
+        border-radius: 20px;
+        z-index: 1;
+
+
+    }
+
+    #menu {
+        background: url(../img/imagenes/boton-menu.jpg);
+    }
+
+    #fondomenu {
+        background: url(../img/imagenes/boton-menu3.jpg);
+    }
+
+
+    #fondomenu ul li a {
+        background: url(../img/imagenes/boton-menu.jpg);
+
+    }
+
+    /* parte responsiva*/
+    @media (min-width: 1201px) {
+        #fondomenu img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #menu {
+            height: 30px;
+        }
+
+        #fondomenu {
+            width: 900px;
+            height: 30px;
+        }
+
+        #fondomenu ul {
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: auto;
+            margin-right: 0px;
+            margin-left: 536px;
+            padding: 0;
+        }
+
+        #fondomenu ul li a {
+            width: 120px;
+            height: 30px;
+            margin-right: 1px;
+            float: left;
+            line-height: 30px;
+            font-size: 13px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+
+
+
+
+    }
+
+    @media (min-width: 701px) and (max-width: 1200px) {
+
+        #fondomenu img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #menu {
+            height: 30px;
+        }
+
+        #fondomenu {
+            width: 600px;
+            height: 30px;
+        }
+
+        #fondomenu ul {
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: auto;
+            margin-right: 0px;
+            margin-left: 236px;
+            padding: 0;
+        }
+
+        #fondomenu ul li a {
+            width: 120px;
+            height: 30px;
+            margin-right: 1px;
+            float: left;
+            line-height: 30px;
+            font-size: 13px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        #fondomenu ul li a:hover {
+            color: blanchedalmond;
+        }
+
+
+    }
+
+
+    @media (max-width: 700px) {
+        #btn1 {
+            display: block;
+            border-radius: 50px;
+
+
+        }
+
+        #btn1 img {
+            width: 40px;
+            height: 40px;
+            text-align: left;
+        }
+
+
+        #fondomenu img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #menu {
+            height: 30px;
+        }
+
+        #fondomenu {
+            width: 90px;
+            height: 30px;
+        }
+
+        #fondomenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #fondomenu ul li a {
+            width: 90px;
+            height: 30px;
+            margin-right: 1px;
+            float: left;
+            line-height: 30px;
+            font-size: 13px;
+            color: white;
+            text-decoration: none;
+            display: block;
+            z-index: 3;
+        }
+
+        #fondomenu ul li a:hover {
+            color: blanchedalmond;
+        }
+
+
+    }
+</style>
+<div id="conte">
+    <div id="contenedor">
+        <div id="cabecera">
+            <h1>Registrate ahora mismo, es gratis!</h1>
+
+        </div>
+
+        <div id="menu">
+            <button id="btn1"><img src="images/img/icons8-abrir-carpeta-50.png"></button>
+
+            <div id="fondomenu">
+                <ul>
+                    <li><a href="/"><img class="alineadoTextoImagenCentro" src="images/img/home.png">&nbsp;Inicio</a>
+                    </li>
+
+                    <li><a href="/verIncio"><img class="alineadoTextoImagenCentro"
+                                src="images/img/login.jpg">&nbsp;Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="z-index: 1;">
+
+    <form class="formulario" method="POST" action="/">
+
+        <div class="titulo">
+            <small class="label label-warning">DATOS GENERALES </small>
+
+        </div>
+        <div class="form-group">
+            <label class="label_titulo" for="nombres">Nombre</label>
+            <br>
+
+            <input type="text" class="form-control" id="nombres" name="nombres" aria-describedby="nombresHelp"
+                placeholder="Ingrese sus nombres" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label class="label_titulo" for="apellidos">Apellidos </label>
+            <br>
+
+            <input type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp"
+                placeholder="Ingrese sus apellidos" required>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label class="label_titulo" for="cedula">Cedula (11 digitos) </label>
+            <br>
+
+            <input type="text" class="form-control" id="cedula" name="cedula" aria-describedby="cedulaHelp"
+                placeholder="Ingrese la cedula" pattern="^[9|8|7|6|5|4|3|2|1|0]\d{9}$">
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label class="label_titulo" for="fecha_nac">Fecha de nacimiento </label>
+            <br>
+
+            <input type="date" class="form-control" id="fecha_nac" name="fecha_nac" aria-describedby="fecha_nacHelp"
+                placeholder="Ingrese la cedula" style="text-align:center" required>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label class="label_titulo" for="edad">Edad</label>
+            <br>
+
+            <input type="text" name="edad" id="edad" class="form-control" style="text-align:center" placeholder="Edad"
+                readonly>
+        </div>
+        <br>
+
+        <div class="titulo">
+            <small>DATOS DE LA CUENTA </small>
+        </div>
+        <div class="form-group">
+            <label class="label_titulo" for="exampleInputEmail1">Correo electronico </label>
+            <br>
+            <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp"
+                placeholder="Ingrese el correo electronico personal" required>
+
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label class="label_titulo" for="exampleInputPassword1">Clave </label>
+            <br>
+
+            <input required type="password" class="form-control" name="clave" id="pass1" placeholder="Clave">
+            <br>
+            <label class="label_titulo" for="exampleInputPassword1">Confirma tu clave </label>
+            <br>
+
+            <input required type="password" class="form-control" name="clave" id="pass2"
+                placeholder="Escribe de nuevo tu clave">
+            <br>
+            <a id="tc"></a>
+            <a id="tc1"></a>
+
+        </div>
+        <br>
+
+        <button id="bon1" class="boton_infor" type="submit">Registrate</button>
+        <br>
+        <br>
+        <a class="boton_cn" href="/">Volver al inicio</a>
+    </form>
+</div>

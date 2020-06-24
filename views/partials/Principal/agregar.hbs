@@ -1,0 +1,254 @@
+<style>
+  /*cuerpo*/
+
+  body {
+    background: url(../images/img/fo3.jpeg);
+  }
+
+
+
+
+  .formulario {
+    border: 5px double;
+    font: normal 20px arial, helvetica, sans-serif;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+    width: 400px;
+    background-color: rgba(0, 100, 100, .40);
+
+    height: 630px;
+    border-radius: 20px;
+    z-index: 1;
+
+
+  }
+
+  .tarea {
+    width: 200px;
+    height: 200px;
+  }
+
+  #fondomenu img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #menu {
+    background: url(../images/img/imagenes/boton-menu.jpg);
+  }
+
+  #fondomenu {
+    background: url(../images/img/imagenes/boton-menu3.jpg);
+
+  }
+
+  #fondomenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #fondomenu ul li a {
+    background: url(../images/img/imagenes/boton-menu.jpg);
+
+
+
+  }
+
+  /* parte responsiva*/
+  @media (min-width: 1201px) {
+    #fondomenu img {
+      width: 30px;
+      height: 30px;
+    }
+
+    #menu {
+      height: 30px;
+    }
+
+    #fondomenu {
+      width: 485px;
+      height: 30px;
+    }
+
+
+    #fondomenu ul li a {
+      width: 120px;
+      height: 30px;
+      margin-left: 1px;
+      float: left;
+      line-height: 30px;
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+      display: block;
+
+
+    }
+
+
+
+  }
+
+  @media (min-width: 601px) and (max-width: 1200px) {
+
+    #fondomenu img {
+      width: 20px;
+      height: 20px;
+    }
+
+    #menu {
+      height: 30px;
+    }
+
+    #fondomenu {
+      width: 305px;
+      height: 30px;
+    }
+
+
+    #fondomenu ul li a {
+      width: 75px;
+      height: 30px;
+      margin-left: 1px;
+      float: left;
+      line-height: 30px;
+      font-size: 9px;
+      color: black;
+      text-decoration: none;
+      display: block;
+
+    }
+
+    #fondomenu ul li a:hover {
+      color: blanchedalmond;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #btn1 {
+      display: block;
+      border-radius: 50px;
+
+
+    }
+
+    #btn1 img {
+      width: 40px;
+      height: 40px;
+      text-align: left;
+    }
+
+    #btn2 {
+      display: none;
+
+    }
+
+    #fondomenu img {
+      width: 30px;
+      height: 30px;
+    }
+
+    #menu {
+      height: 30px;
+    }
+
+    #fondomenu {
+      width: 90px;
+      height: 30px;
+    }
+
+    #fondomenu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #fondomenu ul li a {
+      width: 90px;
+      height: 30px;
+      margin-left: 1px;
+      float: left;
+      text-align: left;
+      line-height: 30px;
+      font-size: 9px;
+      color: white;
+      text-decoration: none;
+      display: block;
+      z-index: 3;
+
+
+    }
+
+
+  }
+</style>
+<div id="conte">
+  <div id="contenedor">
+    <div id="cabecera">
+      <h1>Nueva foto!</h1>
+
+    </div>
+
+    <div id="menu">
+      <button id="btn1"><img src="images/img/icons8-abrir-carpeta-50.png"></button>
+
+      <div id="fondomenu">
+        <ul>
+          <li><a href="/"><img class="alineadoTextoImagenCentro" src="images/img/home.png">&nbsp;Inicio</a></li>
+          <li><a href="/verBuscar"><img class="alineadoTextoImagenCentro" src="images/img/lupa.png">&nbsp;Buscar</a>
+          </li>
+          <li><a href="/"><img class="alineadoTextoImagenCentro" src="images/img/estrella.svg">&nbsp;Favoritas</a>
+          </li>
+          <li><a href="/"><img class="alineadoTextoImagenCentro" src="images/img/logout.jpg">&nbsp;Logout</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div style="z-index: 1;">
+
+  <form class="formulario" role="form" action="/">
+    <div class="titulo">
+      <small class="label label-warning">Sube tu foto</small>
+
+    </div>
+    <br>
+    <div class="form-group">
+      <label class="label_titulo" for="ti">Titulo</label>
+      <br>
+      <input required type="text" class="form-control" id="ti" />
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label class="label_titulo" for="descripcion">Descripción</label>
+      <br>
+      <textarea class="tarea" placeholder="Escribe la descripcion de la foto"></textarea>
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label class="label_titulo" for="etiquetas">Etiquetas</label>
+      <br>
+      <input type="text" class="form-control" id="etiquetas" />
+    </div>
+    <br>
+
+    <div class="form-group">
+
+      <label class="label_titulo" for="photo">Incluya una foto</label>
+      <div class="drag-drop">
+        <input required class="boton_infor" type="file" />
+      </div>
+      <br>
+
+      <button class="boton_suce" type="submit">Subir foto</button>
+      <button class="boton_cn" type="reset">Cancelar</button>
+  </form>
+</div>

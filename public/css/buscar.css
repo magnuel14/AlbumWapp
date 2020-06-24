@@ -1,0 +1,303 @@
+
+/*cuerpo*/
+  
+  body {
+    
+      background: url(../images/img/fo3.jpeg);
+    }
+  
+      /*buscar*/
+      .bus{
+        margin-top: 15px;
+        margin-left:160px ;
+    
+          
+      }
+
+      .titulo{
+        border: 2px solid darkslategray ;
+        font: normal 18px arial, helvetica, sans-serif;
+        width: 250px;
+        height: 40px;
+        margin: 0 auto;
+        
+        text-align: center;
+        color: black;
+        background: linear-gradient(90deg,
+           rgba(131,58,180,1) 0%, 
+          rgba(253,29,29,1) 50%, 
+          rgba(252,176,69,1) 100%);
+    
+    
+      }
+    .formulario{
+        border: 5px double  ;
+        font: normal 20px arial, helvetica, sans-serif;
+        text-align: center;
+        color: black;
+        margin: 0 auto;
+        width: 250px;
+        background-color: rgba(0,100,100,.40);
+    
+        height: 180px;
+        border-radius: 20px;
+        
+       
+    
+      }
+      /*select*/
+      /*the container must be positioned relative:*/
+.custom-select {
+    position: fixed;
+    font-family: Arial;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-right: 240px;
+
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: rgb(131,58,180);
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, 
+     rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50%,
+     rgba(131,58,180,1) 100%);  
+      color: black;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+      
+      .tarea{
+        width: 200px;
+        height: 200px;
+      }
+      #menu {
+        background: url(../images/img/imagenes/boton-menu.jpg);
+        }
+        #fondomenu {
+        background: url(../images/img/imagenes/boton-menu3.jpg);
+      
+        }
+        #fondomenu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+    
+        #fondomenu ul li a	{
+        background: url(../images/img/imagenes/boton-menu.jpg);
+        
+        
+       
+        }
+  /* parte responsiva*/
+  @media (min-width: 1201px){
+    #fondomenu img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #menu {
+    height: 30px;
+    }
+    #fondomenu {
+    width: 485px;
+    height: 30px;
+    }
+  
+    #fondomenu ul li a	{
+    width: 120px;
+    height: 30px;
+    margin-left: 1px;
+    float: left;
+    line-height: 30px;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    
+   
+    }
+   
+
+  
+}
+@media (min-width: 601px) and (max-width: 1200px){
+  
+  #fondomenu img{
+      width: 20px;
+      height: 20px;
+  }
+  #menu {
+  height: 30px;
+  }
+  #fondomenu {
+  width: 305px;
+  height: 30px;
+  }
+ 
+  #fondomenu ul li a	{
+  width: 75px;
+  height: 30px;
+  margin-left: 1px;
+  float: left;
+  line-height: 30px;
+  font-size: 9px;
+  color:black;
+  text-decoration: none;
+  display: block;
+ 
+  }
+
+  #fondomenu ul li a:hover	{
+  color:blanchedalmond;
+  }
+}
+
+@media  (max-width: 600px){
+  #btn1{
+    display: block;
+    border-radius: 50px;
+
+
+  }
+  #btn1 img{
+    width: 40px;
+    height: 40px;
+    text-align: left;
+  }
+  #btn2{
+    display: none;
+
+  }
+  
+  #fondomenu img{
+    width: 30px;
+    height: 30px;
+}
+#menu {
+height: 30px;
+}
+#fondomenu {
+width: 90px;
+height: 30px;
+}
+
+#fondomenu ul li a	{
+width: 90px;
+height: 30px;
+margin-left: 1px;
+float: left;
+text-align: left;
+line-height: 30px;
+font-size: 9px;
+color: white;
+text-decoration: none;
+display: block;
+
+}
+.titulo{
+    border: 2px solid darkslategray ;
+    font: normal 18px arial, helvetica, sans-serif;
+    width: 250px;
+    height: 40px;
+    margin: 0 auto;
+    
+    text-align: center;
+    color: black;
+    background: linear-gradient(90deg,
+       rgba(131,58,180,1) 0%, 
+      rgba(253,29,29,1) 50%, 
+      rgba(252,176,69,1) 100%);
+
+
+  }
+.formulario{
+    border: 5px double  ;
+    font: normal 20px arial, helvetica, sans-serif;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+    width: 250px;
+    background-color: rgba(0,100,100,.40);
+
+    height: 180px;
+    border-radius: 20px;
+    
+   
+
+  }
+
+      /*buscar*/
+      .bus{
+        margin-top: auto;
+        margin-left:auto ;
+    
+          
+      }
+      /*select*/
+      /*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right:auto;
+
+  }
+
+}
+
+  
+  
+  
+  
+  
